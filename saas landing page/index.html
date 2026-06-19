@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Divalby Gold SaaS V5</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
+html{scroll-behavior:smooth}
+body{background:#0a0a0a;color:#fff;overflow-x:hidden}
+:root{--gold:#d4af37;--orange:#ff7a18}
+.container{width:min(1200px,92%);margin:auto}
+a{text-decoration:none;color:inherit}
+.glow{position:fixed;width:700px;height:700px;background:radial-gradient(circle,var(--orange),transparent 70%);opacity:.08;right:-250px;top:-250px;pointer-events:none}
+nav{position:sticky;top:0;z-index:999;background:rgba(10,10,10,.85);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-size:1.8rem;font-weight:800}
+.logo span{background:linear-gradient(90deg,var(--gold),var(--orange));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.links{display:flex;gap:24px}
+.links a:hover,.footer-links a:hover{color:var(--gold)}
+.btn{padding:14px 20px;border-radius:12px;background:linear-gradient(135deg,var(--gold),var(--orange));color:#111;font-weight:800;transition:.3s}
+.btn:hover{transform:translateY(-3px)}
+.hero{padding:90px 0}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+h1{font-size:4.7rem;line-height:1}
+.accent{background:linear-gradient(90deg,var(--gold),var(--orange));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.sub{margin:20px 0;color:#cfcfcf}
+.dashboard,.card,.price,.quote{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:24px;padding:24px;transition:.3s}
+.card:hover,.price:hover,.quote:hover,.dashboard:hover{transform:translateY(-8px);border-color:var(--gold)}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.metric{background:#141414;padding:15px;border-radius:14px}
+.chart{height:220px;margin:15px 0;border-radius:18px;background:#111;position:relative;overflow:hidden}
+.chart svg{width:100%;height:100%}
+.section{padding:80px 0}
+.logos{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;padding:30px 0}
+.logo-box{background:#121212;padding:20px;border-radius:16px;text-align:center}
+.logo-box img{height:32px;filter:brightness(0) invert(1)}
+.cards,.pricing,.testimonials,.footer-grid{display:grid;gap:20px}
+.cards,.pricing,.testimonials{grid-template-columns:repeat(3,1fr)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.stat{text-align:center}
+.stat h2{font-size:2.6rem;color:var(--gold)}
+.popular{border:2px solid var(--gold)}
+.avatar{width:60px;height:60px;border-radius:50%;object-fit:cover;margin-bottom:10px}
+.cta{padding:60px;border-radius:30px;text-align:center;background:linear-gradient(135deg,#241a00,#3a1e00)}
+footer{padding:70px 0;border-top:1px solid rgba(255,255,255,.08)}
+.footer-grid{grid-template-columns:repeat(4,1fr)}
+.footer-links a{display:block;margin:8px 0;color:#bbb}
+.topbtn{position:fixed;right:20px;bottom:20px;background:linear-gradient(135deg,var(--gold),var(--orange));padding:12px 15px;border-radius:50%}
+.reveal{opacity:0;transform:translateY(25px);transition:.8s}
+.show{opacity:1;transform:none}
+@media(max-width:900px){
+.hero-grid,.cards,.pricing,.testimonials,.stats,.footer-grid,.logos,.metrics{grid-template-columns:1fr}
+.links{display:none} h1{font-size:3rem}
+}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<a id="top"></a>
+
+<nav>
+<div class="container nav">
+<div class="logo">Divalby<span>.</span></div>
+<div class="links">
+<a href="#features">Features</a>
+<a href="#stats">Stats</a>
+<a href="#pricing">Pricing</a>
+<a href="#reviews">Reviews</a>
+</div>
+<a href="#pricing" class="btn">Get Started</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<h1>Build Better Products <span class="accent">Faster</span></h1>
+<p class="sub">A premium SaaS landing page with gold and orange branding, dashboard analytics, pricing, testimonials and polished interactions.</p>
+<a href="#pricing" class="btn">Start Free</a>
+</div>
+<div class="dashboard">
+<div class="metrics">
+<div class="metric"><small>Revenue</small><h3>$84,290</h3></div>
+<div class="metric"><small>Users</small><h3>52,481</h3></div>
+<div class="metric"><small>Growth</small><h3>+28%</h3></div>
+</div>
+<div class="chart">
+<svg viewBox="0 0 500 220">
+<polyline fill="none" stroke="#d4af37" stroke-width="5" points="10,180 80,150 140,160 220,90 300,120 380,60 490,20"/>
+</svg>
+</div>
+</div>
+</div>
+</section>
+
+<div class="container logos reveal">
+<div class="logo-box"><img src="https://cdn.simpleicons.org/stripe/white"></div>
+<div class="logo-box"><img src="https://cdn.simpleicons.org/notion/white"></div>
+<div class="logo-box"><img src="https://cdn.simpleicons.org/slack/white"></div>
+<div class="logo-box"><img src="https://cdn.simpleicons.org/github/white"></div>
+<div class="logo-box"><img src="https://cdn.simpleicons.org/figma/white"></div>
+</div>
+
+<section id="features" class="container section reveal">
+<div class="cards">
+<div class="card"><h3>Analytics</h3><p>Track performance with powerful reports.</p></div>
+<div class="card"><h3>Automation</h3><p>Reduce manual work and save time.</p></div>
+<div class="card"><h3>Collaboration</h3><p>Manage teams from one workspace.</p></div>
+</div>
+</section>
+
+<section id="stats" class="container section reveal">
+<div class="stats">
+<div class="stat"><h2 data-count="50">0</h2><p>K+ Users</p></div>
+<div class="stat"><h2 data-count="120">0</h2><p>Countries</p></div>
+<div class="stat"><h2 data-count="99">0</h2><p>% Uptime</p></div>
+<div class="stat"><h2 data-count="4">0</h2><p>★ Rating</p></div>
+</div>
+</section>
+
+<section id="pricing" class="container section reveal">
+<div class="pricing">
+<div class="price"><h3>Starter</h3><h1>$19/mo</h1><p>5 users • 10GB storage • Email support</p></div>
+<div class="price popular"><h3>Pro</h3><h1>$49/mo</h1><p>20 users • 100GB • API • Priority support</p></div>
+<div class="price"><h3>Enterprise</h3><h1>$129/mo</h1><p>Unlimited users • Custom integrations</p></div>
+</div>
+</section>
+
+<section id="reviews" class="container section reveal">
+<div class="testimonials">
+<div class="quote"><img class="avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200"><h4>Michael Carter</h4><p>Outstanding product.</p></div>
+<div class="quote"><img class="avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200"><h4>Sarah Miller</h4><p>Beautiful and easy to customize.</p></div>
+<div class="quote"><img class="avatar" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200"><h4>James Wilson</h4><p>Perfect SaaS foundation.</p></div>
+</div>
+</section>
+
+<section class="container section reveal">
+<div class="cta">
+<h2>Ready To Launch?</h2>
+<p>Use this template for free. Customize every section to fit your business.</p>
+</div>
+</section>
+
+<footer>
+<div class="container footer-grid">
+<div><h3>Divalby</h3><p>Premium UI templates.</p></div>
+<div class="footer-links"><h4>Product</h4><a href="#features">Features</a><a href="#pricing">Pricing</a></div>
+<div class="footer-links"><h4>Resources</h4><a href="#">Docs</a><a href="#">Guides</a></div>
+<div class="footer-links"><h4>Company</h4><a href="#">About</a><a href="#">Contact</a></div>
+</div>
+</footer>
+
+<a href="#top" class="topbtn">↑</a>
+
+<script>
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('show')}));
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+document.querySelectorAll('[data-count]').forEach(el=>{
+ let target=+el.dataset.count,c=0;
+ let i=setInterval(()=>{c++;el.textContent=c;if(c>=target)clearInterval(i)},20);
+});
+</script>
+</body>
+</html>
