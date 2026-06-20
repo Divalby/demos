@@ -611,9 +611,33 @@ section{
   padding:0 22px;
 }
 
-.faq-item.active .faq-answer{
-  max-height:250px;
-  padding:0 22px 22px;
+.faq-question{
+  position:relative;
+}
+
+.faq-question::after{
+
+  content:'+';
+
+  position:absolute;
+
+  right:20px;
+  top:50%;
+
+  transform:translateY(-50%);
+
+  font-size:1.3rem;
+
+  transition:.3s;
+}
+
+.faq-item.active
+.faq-question::after{
+
+  transform:
+  translateY(-50%)
+  rotate(45deg);
+
 }
 
 /* =====================================================
