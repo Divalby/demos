@@ -1,466 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Portfolio | Divalby Agency Pro</title>
-
-<meta name="description" content="Explore our portfolio of branding, web design, development and marketing projects.">
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="divalby-style-v3.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<div class="loader">
-<div class="loader-logo">Divalby</div>
-</div>
-
 <header class="header">
-
-<div class="container nav">
-
-<a href="index.html" class="logo">
-Divalby
-</a>
-
-<button class="hamburger">
-☰
-</button>
-
-<nav id="nav-menu">
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
-</div>
-
+  <div class="container nav">
+    <a href="index.html" class="logo">Divalby</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
 <section class="hero">
-
-<div class="hero-shape shape-1"></div>
-<div class="hero-shape shape-2"></div>
-
-<div class="container hero-content">
-
-<h1>
-Projects That
-<span class="hero-gradient">
-Create Results
-</span>
-</h1>
-
-<p>
-A showcase of websites, brands and digital experiences
-that helped businesses grow and stand out.
-</p>
-
-</div>
-
+  <div class="container hero-content">
+    <h1>Projects That <span class="hero-gradient">Create Results</span></h1>
+    <p>A showcase of websites, brands and digital experiences that helped businesses grow.</p>
+  </div>
 </section>
 
 <section>
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Featured Portfolio</h2>
-
-<p>
-Explore a selection of our latest work.
-</p>
-
-</div>
-
-<div class="portfolio-filters">
-
-<button class="filter-btn active" data-filter="all">
-All
-</button>
-
-<button class="filter-btn" data-filter="branding">
-Branding
-</button>
-
-<button class="filter-btn" data-filter="web">
-Web Design
-</button>
-
-<button class="filter-btn" data-filter="marketing">
-Marketing
-</button>
-
-<button class="filter-btn" data-filter="development">
-Development
-</button>
-
-</div>
-
-<div class="grid-3">
-
-<div class="project card" data-category="branding">
-
-<div class="project-image"></div>
-
-<h3>Nova Finance</h3>
-
-<p>Brand Identity</p>
-
-</div>
-
-<div class="project card" data-category="web">
-
-<div class="project-image"></div>
-
-<h3>Zen Fitness</h3>
-
-<p>Website Design</p>
-
-</div>
-
-<div class="project card" data-category="development">
-
-<div class="project-image"></div>
-
-<h3>Cloudify</h3>
-
-<p>SaaS Platform</p>
-
-</div>
-
-<div class="project card" data-category="marketing">
-
-<div class="project-image"></div>
-
-<h3>Bright Growth</h3>
-
-<p>Marketing Campaign</p>
-
-</div>
-
-<div class="project card" data-category="branding">
-
-<div class="project-image"></div>
-
-<h3>Pixel Studio</h3>
-
-<p>Brand Refresh</p>
-
-</div>
-
-<div class="project card" data-category="web">
-
-<div class="project-image"></div>
-
-<h3>Urban Homes</h3>
-
-<p>Real Estate Website</p>
-
-</div>
-
-<div class="project card" data-category="development">
-
-<div class="project-image"></div>
-
-<h3>Crypto Core</h3>
-
-<p>Web Application</p>
-
-</div>
-
-<div class="project card" data-category="marketing">
-
-<div class="project-image"></div>
-
-<h3>Growth Labs</h3>
-
-<p>Lead Generation</p>
-
-</div>
-
-<div class="project card" data-category="branding">
-
-<div class="project-image"></div>
-
-<h3>Vision Media</h3>
-
-<p>Visual Identity</p>
-
-</div>
-
-<div class="project card" data-category="web">
-
-<div class="project-image"></div>
-
-<h3>Travel Pro</h3>
-
-<p>Booking Platform</p>
-
-</div>
-
-<div class="project card" data-category="development">
-
-<div class="project-image"></div>
-
-<h3>Health Wave</h3>
-
-<p>Healthcare Portal</p>
-
-</div>
-
-<div class="project card" data-category="marketing">
-
-<div class="project-image"></div>
-
-<h3>Launch Boost</h3>
-
-<p>Product Campaign</p>
-
-</div>
-
-</div>
-
-</div>
-
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Featured Portfolio</h2>
+      <p>Explore some of our highest performing projects.</p>
+    </div>
+
+    <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:50px;">
+      <a class="btn btn-primary">All</a>
+      <a class="btn btn-secondary">Branding</a>
+      <a class="btn btn-secondary">Web Design</a>
+      <a class="btn btn-secondary">Marketing</a>
+      <a class="btn btn-secondary">Development</a>
+    </div>
+
+    <div class="grid-3">
+
+      <div class="card project">
+        <div class="project-image"></div>
+        <h3>Nova Finance</h3>
+        <p>Brand Identity & Financial Platform</p>
+        <br>
+        <a class="btn btn-secondary">View Case Study</a>
+      </div>
+
+      <div class="card project">
+        <div class="project-image"></div>
+        <h3>Zen Fitness</h3>
+        <p>Fitness Membership Ecosystem</p>
+        <br>
+        <a class="btn btn-secondary">View Case Study</a>
+      </div>
+
+      <div class="card project">
+        <div class="project-image"></div>
+        <h3>Cloudify</h3>
+        <p>SaaS Growth Platform</p>
+        <br>
+        <a class="btn btn-secondary">View Case Study</a>
+      </div>
+
+      <div class="card project">
+        <div class="project-image"></div>
+        <h3>Urban Homes</h3>
+        <p>Luxury Real Estate Website</p>
+        <br>
+        <a class="btn btn-secondary">View Case Study</a>
+      </div>
+
+      <div class="card project">
+        <div class="project-image"></div>
+        <h3>Growth Labs</h3>
+        <p>Lead Generation Campaign</p>
+        <br>
+        <a class="btn btn-secondary">View Case Study</a>
+      </div>
+
+      <div class="card project">
+        <div class="project-image"></div>
+        <h3>Vision Media</h3>
+        <p>Creative Brand Transformation</p>
+        <br>
+        <a class="btn btn-secondary">View Case Study</a>
+      </div>
+
+    </div>
+
+  </div>
 </section>
 
 <section>
+  <div class="container">
 
-<div class="container">
+    <div class="section-title">
+      <h2>Results That Matter</h2>
+      <p>Real growth from real projects.</p>
+    </div>
 
-<div class="section-title">
+    <div class="grid-4">
 
-<h2>Case Studies</h2>
+      <div class="card">
+        <h2 style="color:#c7a96b;">+42%</h2>
+        <p>Conversion Increase</p>
+      </div>
 
-<p>
-Real businesses. Real results.
-</p>
+      <div class="card">
+        <h2 style="color:#c7a96b;">+67%</h2>
+        <p>Lead Growth</p>
+      </div>
 
-</div>
+      <div class="card">
+        <h2 style="color:#c7a96b;">500+</h2>
+        <p>Projects Delivered</p>
+      </div>
 
-<div class="grid-3">
+      <div class="card">
+        <h2 style="color:#c7a96b;">98%</h2>
+        <p>Client Satisfaction</p>
+      </div>
 
-<div class="card">
+    </div>
 
-<h3>Nova Finance</h3>
-
-<p>
-Redesigned the company brand and website,
-resulting in a 42% increase in conversions.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Cloudify</h3>
-
-<p>
-Built a scalable SaaS platform that now serves
-thousands of users every month.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Zen Fitness</h3>
-
-<p>
-Created a complete digital ecosystem that boosted
-membership signups by 67%.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
 <section>
+  <div class="container">
 
-<div class="container">
+    <div class="card glass">
 
-<div class="section-title">
+      <div class="section-title">
+        <h2>Ready To Become Our Next Success Story?</h2>
+        <p>Let's create a project that delivers measurable results.</p>
+      </div>
 
-<h2>Project Impact</h2>
+      <div style="text-align:center;">
+        <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+      </div>
 
-<p>
-Numbers that demonstrate measurable growth.
-</p>
+    </div>
 
-</div>
-
-<div class="grid-4">
-
-<div class="card">
-
-<h3 class="counter" data-target="500">0</h3>
-
-<p>
-Projects Delivered
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="counter" data-target="120">0</h3>
-
-<p>
-Clients Served
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="counter" data-target="98">0</h3>
-
-<p>
-Client Satisfaction
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="counter" data-target="15">0</h3>
-
-<p>
-Countries Reached
-</p>
-
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
-
-<section>
-
-<div class="container">
-
-<div class="card glass">
-
-<div class="section-title">
-
-<h2>Ready To Become Our Next Success Story?</h2>
-
-<p>
-Let's create a project that delivers measurable results.
-</p>
-
-</div>
-
-<div style="text-align:center;">
-
-<a href="contact.html" class="btn btn-primary">
-Start Your Project
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<footer class="footer">
-
-<div class="container">
-
-<div class="footer-grid">
-
-<div>
-
-<h3>Divalby</h3>
-
-<p>
-Premium website templates and digital experiences.
-</p>
-
-<div class="newsletter">
-
-<input
-type="email"
-placeholder="Your Email">
-
-<button class="btn btn-primary">
-Join
-</button>
-
-</div>
-
-</div>
-
-<div>
-
-<h3>Quick Links</h3>
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-
-</div>
-
-<div>
-
-<h3>Resources</h3>
-
-<a href="#">Templates</a>
-<a href="#">Documentation</a>
-<a href="#">Support</a>
-<a href="#">Blog</a>
-
-</div>
-
-<div>
-
-<h3>Follow</h3>
-
-<a href="#">Facebook</a>
-<a href="#">Instagram</a>
-<a href="#">X</a>
-<a href="#">LinkedIn</a>
-
-</div>
-
-</div>
-
-<div class="footer-bottom">
-
-<p>
-© <span id="year"></span> Divalby Agency Pro.
-All Rights Reserved.
-</p>
-
-</div>
-
-</div>
-
-</footer>
-
-<script src="script.js"></script>
 
 </body>
 </html>
