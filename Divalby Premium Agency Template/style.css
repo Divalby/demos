@@ -525,14 +525,35 @@ section{
 
 .project-image{
   aspect-ratio:16/10;
-
   border-radius:20px;
+  overflow:hidden;
+  position:relative;
 
-  background:linear-gradient(
-      135deg,
-      #dbeafe,
-      #ede9fe
+  background:
+  linear-gradient(
+    135deg,
+    rgba(37,99,235,.15),
+    rgba(124,58,237,.15)
   );
+
+  transition:.5s;
+}
+
+.project-image::before{
+  content:'';
+  position:absolute;
+  inset:0;
+
+  background:
+  radial-gradient(
+    circle at top left,
+    rgba(255,255,255,.4),
+    transparent 40%
+  );
+}
+
+.project:hover .project-image{
+  transform:scale(1.05);
 }
 
 .project-overlay{
