@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Divalby Agency Pro</title>
+    <meta name="description" content="Get in touch with our team to start your next digital project.">
+    <meta property="og:title" content="Contact Us | Divalby Agency Pro">
+    <meta property="og:description" content="Get in touch with our team to start your next digital project.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            color: var(--text-white);
+            font-family: var(--font-primary);
+            transition: var(--transition-smooth);
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-accent);
+            background: var(--glass-effect);
+        }
+        textarea.form-control {
+            resize: vertical;
+            min-height: 150px;
+        }
+        .contact-info-card {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .contact-info-card:last-child {
+            border-bottom: none;
+        }
+        .contact-info-card h4 {
+            color: var(--primary-accent);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        @media (max-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Page Hero -->
+    <section class="hero text-center" style="min-height: 50vh; padding-top: 15rem; padding-bottom: 5rem;">
+        <div class="hero-glow"></div>
+        <div class="container reveal">
+            <h1 style="margin-bottom: 1.5rem;">Let's Talk</h1>
+            <p style="max-width: 600px; margin: 0 auto; font-size: 1.25rem;">Whether you have a specific project in mind or just want to explore possibilities, our team is ready to listen.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section style="padding-top: 0;">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Contact Form -->
+                <div class="glass-card reveal-left">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 2rem;">Send us a message</h3>
+                    <form id="contactForm">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service of Interest</label>
+                            <select id="service" class="form-control" style="appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23C7A96B%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 1rem top 50%; background-size: 0.65rem auto;">
+                                <option value="" disabled selected>Select a service...</option>
+                                <option value="Brand Identity">Brand Identity</option>
+                                <option value="Website Design">Website Design</option>
+                                <option value="Development">Development</option>
+                                <option value="SEO">SEO</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Consulting">Consulting</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                    <div id="contactSuccess" class="form-success-msg" style="text-align: center; margin-top: 1.5rem; font-size: 1.1rem;">Message Sent Successfully</div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="reveal-right">
+                    <div class="contact-info-card">
+                        <h4>Email</h4>
+                        <p style="margin: 0; font-size: 1.25rem;">hello@divalbyagency.pro</p>
+                    </div>
+                    <div class="contact-info-card">
+                        <h4>Phone</h4>
+                        <p style="margin: 0; font-size: 1.25rem;">+1 (555) 123-4567</p>
+                    </div>
+                    <div class="contact-info-card">
+                        <h4>Location</h4>
+                        <p style="margin: 0; font-size: 1.25rem;">120 Premium Ave, Suite 400<br>New York, NY 10001</p>
+                    </div>
+                    <div class="contact-info-card">
+                        <h4>Working Hours</h4>
+                        <p style="margin: 0; font-size: 1.25rem;">Mon - Fri: 9:00 AM - 6:00 PM EST</p>
+                    </div>
+                    
+                    <div style="margin-top: 3rem;">
+                        <h3 style="margin-bottom: 1.5rem;">FAQ</h3>
+                        <div class="faq-item">
+                            <button class="faq-question">What happens after I contact you? <span class="faq-icon">+</span></button>
+                            <div class="faq-answer">
+                                We will review your message and get back to you within 24 hours to schedule an initial discovery call.
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">Do you sign NDAs? <span class="faq-icon">+</span></button>
+                            <div class="faq-answer">
+                                Yes, we are happy to sign a Non-Disclosure Agreement before discussing any sensitive project details.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
