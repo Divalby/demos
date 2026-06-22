@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" fill="none">
+  <rect width="640" height="400" fill="#0B0B0B"/>
+  <rect x="40" y="30" width="560" height="340" rx="8" fill="#111111" stroke="rgba(199,169,107,0.2)" stroke-width="1"/>
+  <rect x="60" y="50" width="120" height="12" rx="2" fill="#C7A96B" opacity="0.8"/>
+  <rect x="480" y="48" width="60" height="16" rx="4" fill="rgba(199,169,107,0.3)"/>
+  <rect x="550" y="48" width="30" height="16" rx="4" fill="#C7A96B"/>
+  <rect x="120" y="120" width="400" height="32" rx="4" fill="#FFFFFF" opacity="0.9"/>
+  <rect x="160" y="168" width="320" height="14" rx="2" fill="#A0A0A0" opacity="0.6"/>
+  <rect x="200" y="190" width="240" height="14" rx="2" fill="#A0A0A0" opacity="0.4"/>
+  <rect x="260" y="230" width="120" height="36" rx="4" fill="#C7A96B"/>
+  <rect x="390" y="230" width="100" height="36" rx="4" fill="none" stroke="rgba(199,169,107,0.4)" stroke-width="1"/>
+  <rect x="80" y="300" width="140" height="50" rx="6" fill="#111111" stroke="rgba(199,169,107,0.15)" stroke-width="1"/>
+  <rect x="240" y="300" width="140" height="50" rx="6" fill="#111111" stroke="rgba(199,169,107,0.15)" stroke-width="1"/>
+  <rect x="400" y="300" width="140" height="50" rx="6" fill="#111111" stroke="rgba(199,169,107,0.15)" stroke-width="1"/>
+  <circle cx="520" cy="100" r="60" fill="radial-gradient(circle, rgba(199,169,107,0.15) 0%, transparent 70%)" opacity="0.5"/>
+  <defs><radialGradient id="g1"><stop offset="0%" stop-color="#C7A96B" stop-opacity="0.2"/><stop offset="100%" stop-color="#C7A96B" stop-opacity="0"/></radialGradient></defs>
+  <circle cx="520" cy="100" r="60" fill="url(#g1)"/>
+</svg>

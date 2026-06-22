@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" fill="none">
+  <rect width="640" height="400" fill="#080808"/>
+  <defs>
+    <linearGradient id="lawBg" x1="0" y1="0" x2="640" y2="400">
+      <stop offset="0%" stop-color="#0D0D0D"/>
+      <stop offset="50%" stop-color="#111111"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </linearGradient>
+    <radialGradient id="lawGold" cx="70%" cy="20%"><stop offset="0%" stop-color="#E2C48A" stop-opacity="0.2"/><stop offset="100%" stop-color="#C7A96B" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#lawBg)"/>
+  <rect width="640" height="400" fill="url(#lawGold)"/>
+  <rect x="40" y="30" width="560" height="340" rx="8" fill="#111111" stroke="rgba(199,169,107,0.3)" stroke-width="1"/>
+  <rect x="60" y="50" width="100" height="14" rx="2" fill="#C7A96B"/>
+  <rect x="480" y="48" width="100" height="18" rx="2" fill="none" stroke="rgba(199,169,107,0.3)" stroke-width="1"/>
+  <rect x="120" y="110" width="400" height="36" rx="3" fill="#FFFFFF" opacity="0.85"/>
+  <rect x="180" y="160" width="280" height="12" rx="2" fill="#A0A0A0" opacity="0.5"/>
+  <rect x="220" y="180" width="200" height="12" rx="2" fill="#A0A0A0" opacity="0.35"/>
+  <rect x="260" y="220" width="120" height="34" rx="3" fill="#C7A96B"/>
+  <line x1="60" y1="280" x2="580" y2="280" stroke="rgba(199,169,107,0.15)" stroke-width="1"/>
+  <rect x="80" y="300" width="150" height="50" rx="4" fill="#0B0B0B" stroke="rgba(199,169,107,0.1)" stroke-width="1"/>
+  <rect x="250" y="300" width="150" height="50" rx="4" fill="#0B0B0B" stroke="rgba(199,169,107,0.1)" stroke-width="1"/>
+  <rect x="420" y="300" width="150" height="50" rx="4" fill="#0B0B0B" stroke="rgba(199,169,107,0.1)" stroke-width="1"/>
+</svg>
